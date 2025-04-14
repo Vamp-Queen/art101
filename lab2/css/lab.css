@@ -5,7 +5,7 @@
     padding: 10px;
     margin-bottom: 10px;
     border: solid 1px #888;
-    background-color: #ccdeef;
+    background-color: #ffdeef;
   }
 
   #heading h1 {
@@ -20,11 +20,11 @@
     margin-left: 10px;
   }
   #content {
-      background-color: rgb(228, 191, 236);
+      background-color: #9c9cdf;
       width: 1200px;
       min-height: 300px;
       padding: 10px;
       margin: 10px;
-      border: solid 1px #444444;
-      font-size: 20px;
+      border: solid 1px #4a4065;
+      font-size: 15px;
   }
