@@ -7,3 +7,24 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+  #heading h1 {
+      color: 
+      font-family: fantasy;
+      font-size: 200%;
+  }
+
+  p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-indent: 30px;
+    margin-left: 10px;
+  }
+  #content {
+      background-color: purple;
+      width: 1200px;
+      min-height: 300px;
+      padding: 10px;
+      margin: 10px;
+      border: solid 1px #444444;
+      font-size: 20px;
+  }
