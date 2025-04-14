@@ -5,22 +5,22 @@
     padding: 10px;
     margin-bottom: 10px;
     border: solid 1px #888;
-    background-color: #DDD8C4;
+    background-color: #ccdeef;
   }
 
   #heading h1 {
-      color: 
-      font-family: fantasy;
+      color: rgb(43, 4, 4)
+      font-family: Georgia, 'Times New Roman', Times, serif;
       font-size: 200%;
   }
 
   p {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-indent: 30px;
+    text-indent: 40px;
     margin-left: 10px;
   }
   #content {
-      background-color: purple;
+      background-color: rgb(200, 146, 212);
       width: 1200px;
       min-height: 300px;
       padding: 10px;
