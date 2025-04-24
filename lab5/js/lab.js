@@ -1,12 +1,18 @@
 // index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Hailey Phipps
+// Date: April 24, 2025
 
-// Constants
+// Define Variables
+make = "Ford";
+model = "Thunderbird";
+color = "red";
+carYear = 1997;
+currentYear = 2025;
 
 // Functions
+ownIt = true;
+age = currentYear - carYear;
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
 function myFunction(param1, param2) {
   // some code here
   // return results;
