@@ -36,10 +36,15 @@ h1 {
 }
 
 .special {
-  background-color: lavender;
-  border: dotted 50px red;
-  color: pink;
+  background-color: rgb(49, 49, 129);
+  border: dotted 5px rgb(244, 168, 92);
+  color: rgb(244, 217, 222);
   font-weight: bold;
+}
+
+#rightClick {
+  margin: 10px;
+  width: 100px;
 }
 
 /*Yellow: f5d99c
