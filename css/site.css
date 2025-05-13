@@ -23,7 +23,7 @@ h1 {
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 1px #888;
+  border: solid 1px #dbb5c8;
   background-color: #9c9cdf;
 }
 
@@ -34,6 +34,14 @@ h1 {
   border: solid 1px #888;
   background-color: #ffdeef;
 }
+
+.special {
+  background-color: lavender;
+  border: dotted 50px red;
+  color: pink;
+  font-weight: bold;
+}
+
 /*Yellow: f5d99c
 Purple: 9c9cdf
 Pink: ffdeef
