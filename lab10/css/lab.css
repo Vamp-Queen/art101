@@ -9,11 +9,6 @@
     background-color: #DDD8C4;
 }
 
-#rightClick {
-  margin: 10px;
-  width: 100px;
-}
-
 .special {
   background-color: rgb(49, 49, 129);
   border: dotted 5px rgb(244, 168, 92);
@@ -27,8 +22,34 @@
   margin: 3px;
   padding: 5px 10px;
   border-radius: 15px;
-  background-color: darkgrey;
+  background-color: rgb(101, 188, 238);
   color: white;
   font-family: sans-serif;
   font-size: 0.8em;
+}
+
+/* from daisy */
+.text:nth-child(odd) {
+  text-align: left;
+}
+
+.text:nth-child(even) {
+  text-align: right;
+}
+
+#kuromi-jump {
+  border-radius: 50%;
+  width: 50%;
+}
+
+/* Convo Box from Helwa */
+#convo {
+  background-color: rgb(248, 248, 251);
+  margin: 15px auto;
+  padding: 0px;
+  border-radius: 15px;
+  border: solid 1px black;
+  max-width: 450px;
+  text-align: center;
+  overflow: hidden;
 }
