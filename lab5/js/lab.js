@@ -6,33 +6,29 @@
  */ 
 
 // Define Variables
-make = "Ford";
-model = "Thunderbird";
-color = "red";
-carYear = 1997;
-currentYear = 2025;
+let make = "Ford";
+let model = "Thunderbird";
+let color = "red";
+let carYear = 1997;
+let currentYear = 2025;
+let ownIt = true;
+let age = currentYear - carYear;
 
-// Functions
-ownIt = true;
-age = currentYear - carYear;
-
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
-
+// Main function
 function main() {
-  // the code that makes everything happen
   console.log("Age: " + age);
-  // output
-  document.writeln("Make: " + make + "<br>");
-  document.writeln("Model: " + model + "<br>");
-  document.writeln("Color: " + color + "<br>");
-  document.writeln("Year: " + carYear + "<br>");
-  document.writeln("Age: " + age + " years<br>");
-  document.writeln("I own a red " + carYear + " " + make + " " + model + ".<br>");
-  document.writeln("It is " + age + " years old.<br>");
+
+  // Get the output div
+  const outputEl = document.getElementById("output");
+
+  // Add output to the page using innerHTML
+  outputEl.innerHTML += "Make: " + make + "<br>";
+  outputEl.innerHTML += "Model: " + model + "<br>";
+  outputEl.innerHTML += "Color: " + color + "<br>";
+  outputEl.innerHTML += "Year: " + carYear + "<br>";
+  outputEl.innerHTML += "Age: " + age + " years<br>";
+  outputEl.innerHTML += "I own a red " + carYear + " " + make + " " + model + ".<br>";
+  outputEl.innerHTML += "It is " + age + " years old.<br>";
 }
 
-// let's get this party started
 main();
