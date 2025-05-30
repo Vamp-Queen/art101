@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 14 - Debugging Tools & Strategies</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="js/lab.js" DEFER></script>
+</head>
+
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+	<main id="content">
+		<section>
+			<h1>Lab 14 - Debugging Tools & Strategies</h1>
+			<img id="debug" src="img/debug.jpg">
+
+			<div class="minor-section">
+			<div id="challenge"></div>
+					<h2>Challenge</h2>
+					<p>The challenge of Lab 14 is to use our debugging knowledge to fix old
+						assignments, while working with a partner. The most difficult challenge
+						was determining which code was causing the errors; sometimes it was hard
+						to tell if it was the HTML or the JavaScript causing issues, and then it
+						was difficult to pinpoint which code was at fault. 
+					</p>
+			</div>
+
+			<div class="minor-section">
+			<div id="problems"></div>
+					<h2>Problems</h2>
+					<p>I encountered some problems with pinpointing the source of my
+						console errors. First, I had to determine whether it was the HTML, 
+						CSS, or the JavaScript causing the errors, and then I had to look
+						through the code to see what was causing the problems. I had help 
+						from w3 schools and my partner to help with this. 
+						
+					</p>
+			</div>
+
+			<div class="minor-section">
+			<div id="results"></div>
+					<h2>Results</h2>
+					<p>Well, you are viewing the index.html file that I created.<br> 
+					</p>
+			</div>
+			
+			<div class="minor-section">
+			<div id="debugging"></div>
+				<h2>Debugging</h2>
+				<h3>Lab 2</h3>
+				<img id="lab2a" src="img/lab2a.png">
+				<img id="lab2b" src="img/lab2b.png">
+				<img id="lab2c" src="img/lab2c.png">
+				<p>Here is the Debugging process for Lab 2. The main issue here was that I
+					was linking to a local file in my Title HTML: " link rel="stylesheet" 
+					type="text/css" href="C:\Users\Hailey\Desktop\art101\lab2\css\lab.css" ". 
+					I resolved this error by linking instead to my css, and changing the code to:
+					" link rel="stylesheet" type="text/css" href="css/lab.css" ". After I made 
+					this change, it resolved the console error and worked correctly. 
+				</p>
+
+				<h3>Lab 5</h3>
+				<img id="lab5a" src="img/lab5a.png">
+				<img id="lab5b" src="img/lab5b.png">
+				<img id="lab5c" src="img/lab5c.png">
+				<p>Here is the Debugging process for Lab 5. The main issue here was that I was
+					using "document.writeln()" to output my JavaScript, which is meant to be used 
+					while the page is still loading, not after it's done. While using "document.writeln"
+					was part of the lab, I took this as an opportunity to learn the proper way to insert 
+					content into a specific element, and not the whole page. I learned to use innerHTML 
+					instead, and changed the lines of code to "output.innerHTML += ;".
+				</p>
+
+				<div id="output"></div>
+
+			</div>
+		
+		</section>
+		<nav id="links">
+			<!-- Put links to other pages (including the homepage) here. -->
+			<a href="../index.html">
+				Hailey's Homepage: Art 101</a>
+		</nav>
+	</main>
+</body>
+</html>
