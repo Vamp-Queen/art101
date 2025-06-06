@@ -7,21 +7,23 @@
  */ 
 
 // ajax object
-const ajaxObj = {
-  url: "https://xkcd.com/info.0.json",
-  data: {
-    api_key: "DEMO_KEY"
-  },
+const comicObj = {
+  url: "https://corsproxy.io/?https://xkcd.com/info.0.json",
+  data: {},
   type: "GET",
   dataType: "json"
-}
+};
 
 // Button listener
 $("#button").click(function() {
+  console.log("Click!");
+
   // Call ajax
-  $.ajax(ajaxObj)
+  $.ajax(comicObj)
+  
   // success callback
   .done(function(data) {
+    console.log("Success!");
     console.log(data);
     
     // Extract the answer from data
@@ -29,15 +31,19 @@ $("#button").click(function() {
     let num = data.num;
     let desc = data.transcript;
     let imageURL = data.img;
+    let altText = data.alt;
 
     // Put data in output
     $("#output").html(`<h2>${title}</h2>`);
-    $("#output").append(`<img src='${imageURL}' />`);
-    $("#output").append(`<p class='date'>${num}</p>`);
-    $("#output").append(`<p class='date'>${desc}</p>`);
+    $("#output").append(`<p><strong>Comic #:</strong> ${num}</p>`);
+    $("#output").append(`<p><strong>Transcript:</strong> ${desc || "No transcript available."}</p>`);
+    $("#output").append(`<img src="${imageURL}" alt="${altText}" title="${altText}" />`);
   })
+
   // Fail callback
-  .fail(function(xhr, status, errorThrown) {
-    console.log("Error:" + errorThrown + " Status:" + status );
+  .fail(function(xhr, status, error) {
+    // Error handler
+    console.error(error);
   });
-})
+
+});
